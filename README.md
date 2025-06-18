@@ -6,8 +6,10 @@ This project demonstrates a basic **microfrontend setup** using **Module Federat
 
 ## 📁 Project Structure
 
-- **Host Application:** `apps/container`This is the main application that consumes remote components or pages.
-- **Remote Application(s):** `apps/remote`
+- **Host Application:** `apps/container`  
+  This is the main application that consumes remote components or pages.
+
+- **Remote Application(s):** `apps/remote`  
   These apps expose components/pages that can be consumed by the host or other remotes.
 
 ---
@@ -84,3 +86,29 @@ declare module "remote/App"; // Match your remote expose path
 - Ensure the remote application is running before the host tries to consume it.
 - Use consistent shared dependencies (`react`, `react-dom`, etc.) across apps to avoid conflicts.
 - You can scale this setup by adding more remotes following the same pattern.
+
+---
+
+## 🎨 Tailwind CSS Integration
+
+If you're using **Tailwind CSS** in your microfrontend setup, ensure the **host application** is aware of remote component styles.
+
+### 🔧 Update Host Tailwind Config
+
+In the host app’s `tailwind.config.js`, update the `content` array to include remote source files:
+
+```js
+module.exports = {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "../**/src/**/*.{js,ts,jsx,tsx}", // 👈 Enables Tailwind scanning for remote components
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
+```
+
+This configuration ensures that Tailwind CSS processes all utility classes used in the remote apps.

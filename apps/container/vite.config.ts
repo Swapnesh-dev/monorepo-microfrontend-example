@@ -11,7 +11,7 @@ export default defineConfig({
       remotes: {
         remote: "http://localhost:3001/assets/remoteEntry.js",
       },
-      shared: ["react", "react-dom"],
+      shared: ["react", "react-dom", "tailwindcss"],
     }),
   ],
   server: {
