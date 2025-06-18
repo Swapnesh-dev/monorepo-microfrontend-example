@@ -1,0 +1,24 @@
+{
+  "name": "monorepo",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:remote": " npm run dev --workspace=apps/remote",
+    "dev:container": " npm run dev --workspace=apps/container",
+    "preview:remote": " npm run preview --workspace=apps/remote",
+    "preview:container": " npm run preview --workspace=apps/container",
+    "build:remote": " npm run build --workspace=apps/remote",
+    "build:container": " npm run build --workspace=apps/container",
+    "mf:remote": "npm run build:remote && npm run preview:remote",
+    "mf:container": "npm run build:container && npm run preview:container"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
