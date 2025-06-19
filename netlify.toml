@@ -1,3 +1,7 @@
+[build]
+  command = "pnpm run build:remote"
+  publish = "apps/remote/dist"
+
 [[headers]]
   for = "/assets/remoteEntry.js"
   [headers.values]
