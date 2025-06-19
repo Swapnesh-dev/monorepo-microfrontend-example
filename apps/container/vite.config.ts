@@ -9,7 +9,7 @@ export default defineConfig({
     federation({
       name: "container",
       remotes: {
-        remote: "http://localhost:3001/assets/remoteEntry.js",
+        remote: "https://monorepoexample.netlify.app/assets/remoteEntry.js",
       },
       shared: ["react", "react-dom", "tailwindcss"],
     }),
