@@ -3,7 +3,8 @@
   publish = "apps/remote/dist"
 
 [[headers]]
-  for = "/assets/remoteEntry.js"
+  # Apply CORS to all federated JS assets
+  for = "/assets/*.js"
   [headers.values]
     Access-Control-Allow-Origin = "*"
     Access-Control-Allow-Methods = "GET, OPTIONS"
