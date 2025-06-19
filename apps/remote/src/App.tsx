@@ -47,7 +47,7 @@ export default function HomePage() {
             <div className="relative">
               <div className="aspect-square bg-gradient-to-br from-blue-100 to-purple-100 rounded-3xl p-8">
                 <img
-                  src="/placeholder.svg?height=500&width=500"
+                  src="https://img.freepik.com/free-vector/dashboard-business-user-panel_23-2148356894.jpg?ga=GA1.1.1683302644.1733807432&semt=ais_hybrid&w=740"
                   alt="Product Dashboard"
                   className="w-full h-full object-cover rounded-2xl shadow-2xl"
                 />
@@ -173,7 +173,7 @@ export default function HomePage() {
             </div>
             <div className="relative">
               <img
-                src="/placeholder.svg?height=400&width=600"
+                src="https://img.freepik.com/free-photo/authentic-small-youthful-marketing-agency_23-2150167428.jpg?ga=GA1.1.1683302644.1733807432&semt=ais_hybrid&w=740"
                 alt="Team working"
                 className="w-full h-96 object-cover rounded-2xl shadow-xl"
               />
@@ -238,8 +238,8 @@ export default function HomePage() {
                 <span className="text-yellow-400">★★★★★</span>
               </div>
               <p className="text-gray-600 mb-4">
-                "Simple, powerful, and reliable. Brand has everything we need
-                to build and scale our digital products."
+                "Simple, powerful, and reliable. Brand has everything we need to
+                build and scale our digital products."
               </p>
               <div className="flex items-center space-x-3">
                 <div className="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold">
