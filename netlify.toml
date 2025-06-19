@@ -1,7 +1,3 @@
-[build]
-  command = "pnpm run build:remote"
-  publish = "apps/remote/dist"
-
 [[headers]]
   # Apply CORS to all federated JS assets
   for = "/assets/*.js"
